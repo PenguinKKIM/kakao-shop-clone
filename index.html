@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오톡 쇼핑하기</title>
+
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <meta property="og:url" content="https://store.kakao.com/kakaofriends">
+  <meta property="twitter:url" content="https://store.kakao.com/kakaofriends">
+  <meta property="plink" content="https://store.kakao.com/kakaofriends">
+  <meta property="dg:plink" content="https://store.kakao.com/kakaofriends">
+  <meta property="og:title" content="카카오톡 스토어 카카오프렌즈">
+  <meta property="twitter:title" content="카카오톡 스토어 카카오프렌즈">
+  <meta property="og:image" content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
+  <meta property="twitter:image" content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
+  <meta property="og:description" content="일상 속 즐거움을 전하는라이프스타일 브랜드">
+  <meta property="twitter:description" content="일상 속 즐거움을 전하는라이프스타일 브랜드">
+  <meta property="og:site_name" content="톡스토어">
+
+
+  <!-- fontawesome(아이콘) -->
+  <script defer src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+  <!-- swiper.js -->
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <script defer src='./js/index.js'></script>
+
+  <!--브라우저 스타일 초기화(reset.css)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <div class='container'>
+
+    <nav class='inner-header'>
+
+      <div class='inner_wrap'>
+        <div class='inner_wrap_left'>
+          <a href=""><img src="./imgs/pc_logo.png" alt="쇼핑하기 로고"></a>
+        </div>
+        <div class='inner_wrap_right'>
+          <div class='header-icons'>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-truck-moving"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+          <div class='cur-user'>
+            <img src="./imgs/elivery.png" alt="유저프로필 사진" class='cur-user__img' />
+            <div class='cur-user__name'>
+              김희준
+            </div>
+
+            <nav>
+              <i class="fas fa-caret-down"></i>
+              <ul class='cur-user__dropdown'>
+                <li class='dropdown-comp'><a href="#">MY쇼핑</a></li>
+                <li class='dropdown-comp'><a href="#">찜한상품</a></li>
+                <li class='dropdown-comp'><a href="#">스탬프 모으기</a></li>
+                <li class='dropdown-comp'><a href="#">쿠폰함</a></li>
+                <li class='dropdown-comp'><a href="#">로그아웃</a></li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <header class='top-header'>
+      <!-- 스토어 로고 -->
+      <div class='store-intro'>
+
+        <div class='store-intro__logo'>
+          <img src="./imgs/title_logo.png" alt="카카오프렌즈 스토어 로고">
+        </div>
+
+        <div class='store-intro__store-info'>
+          <a href="#"><i class="fas fa-info-circle"></i> 스토어정보</a>
+        </div>
+
+      </div>
+
+      <nav class='store-nav'>
+
+        <div class='store-nav-con'>
+
+          <div class='store-nav-left'>
+            <ul class='store-nav__list'>
+              <li class='store-nav__list-comp active'>홈</li>
+              <li class='store-nav__list-comp'>베스트</li>
+              <!-- new 아이콘이 있을경우 -->
+              <li class='store-nav__list-comp store-new'>털찐죠르디
+                <div class='icon-new'></div>
+              </li>
+              <li class='store-nav__list-comp'>팬심저격</li>
+              <li class='store-nav__list-comp'>오늘부터갓생</li>
+              <li class='store-nav__list-comp'>카테고리</li>
+              <li class='store-nav__list-comp'>계획전</li>
+            </ul>
+          </div>
+
+          <div class='store-nav-right'>
+            <form action="https://store.kakao.com/kakaofriends/search/products?q=">
+              <input type='search' placeholder='카카오프렌즈 상품검색' />
+              <i class="fas fa-search"></i>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class='slider-section'>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./imgs/slider1.png" alt="첫번째 이미지" /></div>
+            <div class="swiper-slide"><img src="./imgs/slider2.png" alt="두번째 이미지"></div>
+            <div class="swiper-slide"><img src="./imgs/slider3.png" alt="세번째 이미지"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class='brandstore-section'>
+        <article class='brandstore-profile'>
+
+          <div class='brandstore-top'>
+
+            <div class='brandstore-profile__img'>
+              <img src="./imgs/profile_img.png" alt="프로필 이미지">
+            </div>
+
+            <div class='brandstore-profile_text'>
+              <div><i class="far fa-check-circle"></i>브랜드공식</div>
+              <div> 카카오프렌즈<i class="fas fa-info-circle"></i></div>
+              <div><span>스토어 찜 20,000</span> <span> 채널친구 2,000,000</span></div>
+            </div>
+
+          </div>
+
+
+          <div class='brandstore-profile__buttons'>
+            <div class='profile__button-check'><i class="far fa-share-square"></i></div>
+            <button class='profile__button'><i class="fas fa-check"></i>찜한 스토어</button>
+            <button class='profile__button'><i class="fas fa-check"></i>소식 받는중</button>
+          </div>
+
+        </article>
+      </section>
+
+      <section class='new-item-section'>
+        <div class='new-item-container'>
+
+          <div class='new-item__title'>
+            NEW 새로나왔어요
+          </div>
+
+          <div class='new-item__comps'>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_01.jpg" alt="신상품">
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_02.jpg" alt="신상품">
+              <div>12,000원</div>
+              <div>별주부전 니니마트 죠르디</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_03.jpg" alt="신상품">
+              <div>9,000원</div>
+              <div>볼 발그레 포슬 키링인형 죠르디</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_04.jpg" alt="신상품">
+              <div>39,900원</div>
+              <div>죠르디 치즈 카메라</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_05.jpg" alt="신상품">
+              <div>1,500원</div>
+              <div>죠르디 입니다 네컷 포토 스티커 하트하죠</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_06.jpg" alt="신상품">
+              <div>9,900원</div>
+              <div>니니즈 죠르디 피규어 무드등</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_07.jpg" alt="신상품">
+              <div>12,800원</div>
+              <div>니니즈 한잔 소맥잔 4P 세트</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_01.jpg" alt="신상품">
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_02.jpg" alt="신상품">
+              <div>12,000원</div>
+              <div>별주부전 니니마트 죠르디</div>
+            </div>
+
+            <div class='new-item__comp'>
+              <img src="./imgs/new_item_03.jpg" alt="신상품">
+              <div>9,000원</div>
+              <div>볼 발그레 포슬 키링인형 죠르디</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <article class='custom-bnr'>
+        <div><i class="fas fa-receipt"></i>기존 주문 내역 확인하기</div>
+        <div><i class="fas fa-chevron-right"></i></div>
+      </article>
+
+      <section class='quicklink-section'>
+        <ul class='quicklink-grid'>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/new_logo.jpg" alt="신상품 로고">
+            <span>신상품</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/sale_icon.jpg" alt="세일로고">
+            <span>SALE</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/furchun_icon.jpg" alt="털찐춘식이로고">
+            <span>털찐춘식</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/godsang_icon.jpg" alt="갓생로고">
+            <span>갓생</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/fan_icon.jpg" alt="팬심저격">
+            <span>팬심저격</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/chun_icon.jpg" alt="춘식이">
+            <span>춘식이</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/ryan_icon.jpg" alt="라이언">
+            <span>라이언</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/apch_icon.jpg" alt="어피치">
+            <span>어피치</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/rufi_icon.jpg" alt="루피">
+            <span>잔망루피</span>
+          </li>
+
+          <li class="quicklink-grid__comp">
+            <img src="./imgs/rabbit_icon.jpg" alt="또앙">
+            <span>또앙찌네</span>
+          </li>
+
+
+        </ul>
+      </section>
+
+      <section class='best-ranking-section'>
+        <div class='new-item__title'>
+          BEST 제일 잘 나가요
+        </div>
+
+        <ul class="best-ranking__comps">
+
+          <li class="best-ranking__comp">
+
+            <div class='best-ranking__img'>
+              <img src="./imgs/new_item_04.jpg" alt="베스트아이템">
+              <div class='best-ranking__rank'>1</div>
+              <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
+            </div>
+
+            <div class='best-ranking__text'>
+              <div>39,900원</div>
+              <div>죠르디 치즈카메라</div>
+            </div>
+
+          </li>
+
+          <li class="best-ranking__comp">
+
+            <div class='best-ranking__img'>
+              <img src="./imgs/new_item_02.jpg" alt="베스트아이템">
+              <div class='best-ranking__rank'>2</div>
+              <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
+            </div>
+
+            <div class='best-ranking__text'>
+              <div>19,000원</div>
+              <div>별주부전 니니마트 죠르디</div>
+            </div>
+
+          </li>
+
+          <li class="best-ranking__comp">
+
+            <div class='best-ranking__img'>
+              <img src="./imgs/new_item_07.jpg" alt="베스트아이템">
+              <div class='best-ranking__rank'>3</div>
+              <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
+            </div>
+
+            <div class='best-ranking__text'>
+              <div>12,800원</div>
+              <div>니니즈 한잔 소맥잔 4P 세트</div>
+            </div>
+
+          </li>
+
+          <li class="best-ranking__comp">
+
+            <div class='best-ranking__img'>
+              <img src="./imgs/new_item_05.jpg" alt="베스트아이템">
+              <div class='best-ranking__rank'>4</div>
+              <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
+            </div>
+
+            <div class='best-ranking__text'>
+              <div>1,500원</div>
+              <div>죠르디 입니다 네컷 포토 스티커 하트하죠</div>
+            </div>
+
+          </li>
+
+          <li class="best-ranking__comp">
+
+            <div class='best-ranking__img'>
+              <img src="./imgs/new_item_01.jpg" alt="베스트아이템">
+              <div class='best-ranking__rank'>5</div>
+              <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
+            </div>
+
+            <div class='best-ranking__text'>
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class='best-ranking__btn'>
+          베스트 랭킹 상품 더 보기 <i class="fas fa-angle-right"></i>
+        </div>
+
+      </section>
+
+      <article class='new-bnr'>
+        <img src="./imgs/new_banner.png" alt="신상배너">
+      </article>
+
+      <section class='vid-section'>
+
+        <div class='new-item__title'>
+          NINIZ Carol
+        </div>
+
+        <div class='vid__area'>
+          <div id='player'></div>
+        </div>
+
+        <div class='vid-items'>
+
+          <ul class='vid-items__comps'>
+
+            <li class="vid-items__comp">
+
+              <div class='vid-items__img'>
+                <img src="./imgs/new_item_03.jpg" alt="비디오관련 아이템">
+              </div>
+
+              <div class='vid-items__text'>
+
+                <div class='vid-items__text-left'>
+                  <div>볼 발그레 포슬 키링인형 죠르디</div>
+                  <div>19,000원</div>
+                </div>
+
+                <div class='vid-items__text-right'>
+                  <i class="far fa-heart"></i>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="vid-items__comp">
+
+              <div class='vid-items__img'>
+                <img src="./imgs/new_item_02.jpg" alt="비디오관련 아이템">
+              </div>
+
+              <div class='vid-items__text'>
+                <div class='vid-items__text-left'>
+                  <div>별주부전 니니마트 죠르디</div>
+                  <div>12,000원</div>
+                </div>
+                <div class='vid-items__text-right'>
+                  <i class="far fa-heart"></i>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="vid-items__comp">
+
+              <div class='vid-items__img'>
+                <img src="./imgs/new_item_04.jpg" alt="비디오관련 아이템">
+              </div>
+
+              <div class='vid-items__text'>
+
+                <div class='vid-items__text-left'>
+                  <div>죠르디 치즈 카메라</div>
+                  <div>39,900원</div>
+                </div>
+
+                <div class='vid-items__text-right'>
+                  <i class="far fa-heart"></i>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="vid-items__comp">
+
+              <div class='vid-items__img'>
+                <img src="./imgs/new_item_06.jpg" alt="비디오관련 아이템">
+              </div>
+
+              <div class='vid-items__text'>
+
+                <div class='vid-items__text-left'>
+                  <div>니니즈 죠르디 피규어 무드등</div>
+                  <div>9,900원</div>
+                </div>
+
+                <div class='vid-items__text-right'>
+                  <i class="far fa-heart"></i>
+                </div>
+
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section class='exhibition-section'>
+        <div class='exhibition-img'>
+
+          <img src="./imgs/ex_bg.jpg" alt="전시 배경">
+          <div class='exhibition-text'>
+
+            <div>🐉귀여운 니니즈 친구들➰</div>
+            <div>니니즈 친구들의 귀여운 상품을 만나보세요!</div>
+
+          </div>
+
+        </div>
+        <div class='swiper-container'>
+
+          <div class='swiper-wrapper'>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>35,000원</div>
+                <div>브릭피규어 니니마트 죠르디</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_02.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>12,000원</div>
+                <div>별주부전 니니마트 죠르디</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_03.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>9,000원</div>
+                <div>볼 발그레 포슬 키링인형 죠르디</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_04.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>39,900원</div>
+                <div>죠르디 치즈 카메라</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_05.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>1,500원</div>
+                <div>죠르디 입니다 네컷 포토 스티커 하트하죠</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_06.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>9,900원</div>
+                <div>니니즈 죠르디 피규어 무드등</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_07.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>12,800원</div>
+                <div>니니즈 한잔 소맥잔 4P 세트</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>35,000원</div>
+                <div>브릭피규어 니니마트 죠르디</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_02.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>35,000원</div>
+                <div>브릭피규어 니니마트 죠르디</div>
+              </div>
+
+            </div>
+
+            <div class='swiper-slide'>
+              <img src="./imgs/new_item_03.jpg" alt="전시아이템">
+
+              <div class='slide-text'>
+                <div>35,000원</div>
+                <div>브릭피규어 니니마트 죠르디</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class='swiper-pagination'></div>
+        </div>
+
+        <div class='best-ranking__btn'>
+          기획전 바로가기 <i class="fas fa-angle-right"></i>
+        </div>
+
+      </section>
+
+      <section class='recom-section'>
+
+        <div class='new-item__title'>
+          요맘때 선물하기 좋은 아이템
+        </div>
+        <div>졸업, 입학, 이사한 친구한테 선물해보세요!</div>
+        <div class='recom-grid'>
+
+          <div class='recom-grid__comp'>
+            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+            <div class='recom-grid__comp-text'>
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+
+          </div>
+
+          <div class='recom-grid__comp'>
+            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+            <div class='recom-grid__comp-text'>
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+          </div>
+
+          <div class='recom-grid__comp'>
+            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+            <div class='recom-grid__comp-text'>
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+          </div>
+
+          <div class='recom-grid__comp'>
+            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+
+            <div class='recom-grid__comp-text'>
+              <div>35,000원</div>
+              <div>브릭피규어 니니마트 죠르디</div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class='footer-top'>
+
+      <div class='footer-top-comp'>
+        <div class='footer-top__text'>
+          <div>카카오프렌즈</div>
+          <div>스토어찜하고 카카오톡으로 다양한 소식을 받아보세요.</div>
+        </div>
+
+        <button class='footer-top__btn'>
+          찜한스토어 20,000
+        </button>
+      </div>
+
+    </footer>
+
+    <footer class='footer'>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
