@@ -13,7 +13,8 @@
 
   - https://store.kakao.com/kakaofriends
 - [x] 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요! 
-- [ ] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+- [x] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+  - https://magical-arithmetic-952b0e.netlify.app/
 
 
 
