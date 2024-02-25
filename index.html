@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imgs/fabi_icon.png">
   <title>카카오톡 쇼핑하기</title>
 
   <!--Open Graph-->
   <!--http://ogp.me/-->
   <!--Twitter Card-->
   <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <!-- 카카오샵에서 그대로 긁어왔습니다 -->
   <meta property="og:url" content="https://store.kakao.com/kakaofriends">
   <meta property="twitter:url" content="https://store.kakao.com/kakaofriends">
   <meta property="plink" content="https://store.kakao.com/kakaofriends">
   <meta property="dg:plink" content="https://store.kakao.com/kakaofriends">
   <meta property="og:title" content="카카오톡 스토어 카카오프렌즈">
   <meta property="twitter:title" content="카카오톡 스토어 카카오프렌즈">
-  <meta property="og:image"
-    content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
-  <meta property="twitter:image"
-    content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
+  <meta property="og:image" content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
+  <meta property="twitter:image" content="https://st.kakaocdn.net/shoppingstore/store/20231226142444_32c7d42ce6724921b4f7910b699f5996.jpg">
   <meta property="og:description" content="일상 속 즐거움을 전하는라이프스타일 브랜드">
   <meta property="twitter:description" content="일상 속 즐거움을 전하는라이프스타일 브랜드">
   <meta property="og:site_name" content="톡스토어">
@@ -27,25 +27,34 @@
 
   <!-- fontawesome(아이콘) -->
   <script defer src="https://kit.fontawesome.com/ad2be14d60.js" crossorigin="anonymous"></script>
+  <!-- lodesh -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- swiper.js -->
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!-- gsap.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js" integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script defer src='./js/index.js'></script>
 
   <!--브라우저 스타일 초기화(reset.css)-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!-- swiper.js의 css -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
 </head>
 
 <body>
-
+  <!-- container -->
   <div class='container'>
 
-    <nav class='inner-header'>
+    <!-- top-nav(상단에 고정됩니다) -->
+    <nav class='top-nav'>
 
       <div class='inner_wrap'>
         <div class='inner_wrap_left'>
@@ -86,6 +95,7 @@
 
     </nav>
 
+    <!-- header -->
     <header class='top-header'>
       <!-- 스토어 로고 -->
       <div class='store-intro'>
@@ -106,7 +116,7 @@
 
           <div class='store-nav-left'>
             <ul class='store-nav__list'>
-              <li class='store-nav__list-comp active'>홈</li>
+              <li class='store-nav__list-comp navActive'>홈</li>
               <li class='store-nav__list-comp'>베스트</li>
               <!-- new 아이콘이 있을경우 -->
               <li class='store-nav__list-comp store-new'>털찐죠르디
@@ -128,10 +138,22 @@
 
         </div>
       </nav>
+
+      <div class='badges'>
+        <div class="badge">
+          <img src="./imgs/badge1.jpg" alt="뱃지">
+        </div>
+        <div class="badge">
+          <img src="./imgs/badge2.jpg" alt="뱃지">
+        </div>
+      </div>
+
     </header>
 
+    <!-- main -->
     <main>
 
+      <!-- 상단 슬라이더 -->
       <section class='slider-section'>
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -142,6 +164,7 @@
         </div>
       </section>
 
+      <!-- brandstore -->
       <section class='brandstore-section'>
         <article class='brandstore-profile'>
 
@@ -169,6 +192,7 @@
         </article>
       </section>
 
+      <!-- new-item -->
       <section class='new-item-section'>
         <div class='new-item-container'>
 
@@ -242,12 +266,15 @@
         </div>
       </section>
 
+      <!-- custom-bnr -->
       <article class='custom-bnr'>
         <div><i class="fas fa-receipt"></i>기존 주문 내역 확인하기</div>
         <div><i class="fas fa-chevron-right"></i></div>
       </article>
 
+      <!-- quicklink -->
       <section class='quicklink-section'>
+
         <ul class='quicklink-grid'>
 
           <li class="quicklink-grid__comp">
@@ -300,10 +327,11 @@
             <span>또앙찌네</span>
           </li>
 
-
         </ul>
+
       </section>
 
+      <!-- best-ranking -->
       <section class='best-ranking-section'>
         <div class='new-item__title'>
           BEST 제일 잘 나가요
@@ -360,7 +388,7 @@
 
             <div class='best-ranking__img'>
               <img src="./imgs/new_item_05.jpg" alt="베스트아이템">
-              <div class='best-ranking__rank'>4</div>
+              <div class='best-ranking__rank other-rank'>4</div>
               <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
             </div>
 
@@ -375,7 +403,7 @@
 
             <div class='best-ranking__img'>
               <img src="./imgs/new_item_01.jpg" alt="베스트아이템">
-              <div class='best-ranking__rank'>5</div>
+              <div class='best-ranking__rank other-rank'>5</div>
               <div class='best-ranking__heart'><i class="far fa-heart"></i></div>
             </div>
 
@@ -394,10 +422,12 @@
 
       </section>
 
+      <!-- new-bnr -->
       <article class='new-bnr'>
         <img src="./imgs/new_banner.png" alt="신상배너">
       </article>
 
+      <!-- vid-section -->
       <section class='vid-section'>
 
         <div class='new-item__title'>
@@ -501,6 +531,7 @@
 
       </section>
 
+      <!-- exhibition -->
       <section class='exhibition-section'>
         <div class='exhibition-img'>
 
@@ -627,6 +658,7 @@
 
       </section>
 
+      <!-- recommend -->
       <section class='recom-section'>
 
         <div class='new-item__title'>
@@ -646,29 +678,29 @@
           </div>
 
           <div class='recom-grid__comp'>
-            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+            <img src="./imgs/new_item_02.jpg" alt="전시아이템">
 
             <div class='recom-grid__comp-text'>
-              <div>35,000원</div>
-              <div>브릭피규어 니니마트 죠르디</div>
+              <div>12,000원</div>
+              <div>별주부전 니니마트 죠르디</div>
             </div>
           </div>
 
           <div class='recom-grid__comp'>
-            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+            <img src="./imgs/new_item_03.jpg" alt="전시아이템">
 
             <div class='recom-grid__comp-text'>
-              <div>35,000원</div>
-              <div>브릭피규어 니니마트 죠르디</div>
+              <div>9,000원</div>
+              <div>볼 발그레 포슬 죠르디</div>
             </div>
           </div>
 
           <div class='recom-grid__comp'>
-            <img src="./imgs/new_item_01.jpg" alt="전시아이템">
+            <img src="./imgs/new_item_04.jpg" alt="전시아이템">
 
             <div class='recom-grid__comp-text'>
-              <div>35,000원</div>
-              <div>브릭피규어 니니마트 죠르디</div>
+              <div>39,900원</div>
+              <div>죠르디 치즈카메라</div>
             </div>
           </div>
 
@@ -678,6 +710,7 @@
 
     </main>
 
+    <!-- footer - store_like -->
     <footer class='footer-top'>
 
       <div class='footer-top-comp'>
@@ -693,22 +726,23 @@
 
     </footer>
 
+    <!-- footer - store_info -->
     <footer class='footer'>
       <div class="footer-comps">
         <div class="footer-comp__banner">카카오 <span> 톡 </span> 쇼핑하기</div>
         <div class="footer-comp__text">
           <p>
-            주)우리집대표이사 : 김희준 주소 : 경기도 의정부시 의정부1동<br/>
+            (주)우리집 대표이사 : 김희준 주소 : 경기도 의정부시 의정부1동<br />
 
-            사업자등록번호 : 000-00-00000 통신판매업신고 : 제000 - 죠르디 - 0000호 호스팅 사업자 : (주)우리집<br/>
+            사업자등록번호 : 000-00-00000 통신판매업신고 : 제000 - 죠르디 - 0000호 호스팅 사업자 : (주)우리집<br />
 
-            이메일 : clfrck@naver.com 고객센터 : 0000 - 0000 (통화 불가) / 톡 상담하기 / 상담시간 : 평일 09:00~18:00 (※ 점심시간 13:00 ~ 14:00)<br/>
+            이메일 : clfrck@naver.com 고객센터 : 0000 - 0000 (통화 불가) / 톡 상담하기 / 상담시간 : 평일 09:00~18:00 (※ 점심시간 13:00 ~ 14:00)<br />
 
-            Copyright © Penguin Corp. All rights reserved<br/>
-            (주)우리집 에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이 포함되어 있습니다.<br/>
-            개별판매자가 판매하는 상품에 대해 (주)우리집은 통신중개판매업자로서 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.<br/>
+            Copyright © Penguin Corp. All rights reserved<br />
+            (주)우리집 에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이 포함되어 있습니다.<br />
+            개별판매자가 판매하는 상품에 대해 (주)우리집은 통신중개판매업자로서 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.<br />
           </p>
-          
+
           <div class="footer-service-info">
             <span>고객센터</span>
             <span>이용약관</span>
@@ -719,9 +753,17 @@
 
         </div>
       </div>
-      <div>1232314</div>
+
     </footer>
 
+
+  </div>
+
+  <div id='to-top'>
+    <div class='to-top-icon'>
+      <i class="fas fa-chevron-up"></i>
+      <img src="./imgs/to-top_icon.gif" alt="최상단 아이콘 이미지">
+    </div>
   </div>
 
 </body>

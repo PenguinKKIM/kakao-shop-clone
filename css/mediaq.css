@@ -1,0 +1,6 @@
+@media (max-width:1700px) {
+  /* 일정 크기로 줄어들면 이미지가 겹져져서 뺐습니다 */
+  .badge{
+    display: none;
+  }
+}

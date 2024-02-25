@@ -37,6 +37,7 @@ main .swiper-slide img {
   object-fit: contain;
 }
 
+/* 각 세션들 크기 설정 */
 .brandstore-section, 
 .new-item-section, 
 .custom-bnr, 
@@ -48,7 +49,7 @@ main .swiper-slide img {
   width: 47rem;
 }
 
-/* 브랜드스토어 */
+/* brandstore: 스토어 프로필  */
 .brandstore-top{
   display: flex;
   align-items: center;
@@ -71,15 +72,16 @@ main .swiper-slide img {
 
   margin-bottom: .3rem;
 }
+
 .brandstore-profile_text div:nth-child(2){
+  margin-bottom: .4rem;
   font-size: 1.1rem;
   font-weight: 600;
-
-  margin-bottom: .4rem;
 }
+
 .brandstore-profile_text div:nth-child(2) i{
-  color: rgba(34,34,34,.2);
   margin: 0 .5rem;
+  color: rgba(34,34,34,.2);
 }
 
 .brandstore-profile_text div:nth-child(3){
@@ -104,12 +106,12 @@ main .swiper-slide img {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 44px;
   
   background-color: rgba(34,34,34,.05);
   padding: 1rem;
   border-radius:10px;
-
+  line-height: 44px;
+  
   cursor: pointer;
 }
 
@@ -119,11 +121,11 @@ main .swiper-slide img {
 
 .brandstore-section .brandstore-profile__buttons .profile__button{
   width: 100%;
-  line-height: 44px;
-
+  
   background-color: none;
   border: none;
   border-radius: 10px;
+  line-height: 44px;
 
   cursor: pointer;
 }
@@ -147,7 +149,7 @@ main .swiper-slide img {
   transition: .3s;
 }
 
-/* 뉴 아이템 */
+/* new-item : 새로나왔어요  */
 .new-item-container{
   width: 100%;
 }
@@ -160,15 +162,18 @@ main .swiper-slide img {
 
 .new-item__comps{
   height: 220px;
-  padding: 1rem;
+
   display: flex;
   gap: .5rem;
   
   margin-top: 2rem;
+  padding: 1rem;
+
   overflow-x: scroll;
   scrollbar-color: green;
 }
 
+/* 스크롤컬러 설정하기 */
 .new-item__comps::-webkit-scrollbar{
   height: 10px;
   background-color: var(--color-jordy)
@@ -188,9 +193,9 @@ main .swiper-slide img {
 
 .new-item__comp img{
   width: 124px;
+
   border: 1px solid rgba(34,34,34,.05);
   border-radius: 5px;
-  
   box-shadow: 1px 2px 2px rgba(34,34,34,.05);
 }
 
@@ -217,16 +222,18 @@ main .swiper-slide img {
   color: #666;
 }
 
+
+/* custom-bnr : 기존 주문내역 확인하기 */
 .custom-bnr{
   width: 47rem;
   height: 2rem;
-
-  padding: 1rem .5rem;
-
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
+  padding: 1rem .5rem;
+  
   background-color: rgba(146, 208, 161, 0.1);
   border-radius: 10px;
 
@@ -234,8 +241,9 @@ main .swiper-slide img {
 }
 
 .custom-bnr div:nth-child(1){
-  font-size: 1.5rem;
   margin: 0 .5rem;
+
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -249,12 +257,14 @@ main .swiper-slide img {
   color: var(--color-darkgreen);
 }
 
+
+/* quicklink - 기존은 flex 였는데 grid 로 구현해 봤습니다 */
 .quicklink-grid{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: auto;
-
   gap: 1rem;
+
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -281,11 +291,13 @@ main .swiper-slide img {
 }
 
 .quicklink-grid__comp span{
+  margin-top: 6px;
   font-size: .8rem;
   color: #666;
-  margin-top: 6px;
 }
 
+
+/*best-ranking -BEST 제일 잘나가요 */
 .best-ranking__comps{
   margin-top: 2rem;
 
@@ -325,7 +337,12 @@ main .swiper-slide img {
 
   background-color: rgba(255, 0, 0, 0.5);
   border-radius: 5px;
+
   color: #fff;
+}
+
+.other-rank{
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .best-ranking__heart{
@@ -342,6 +359,11 @@ main .swiper-slide img {
 
   background-color: rgba(102, 102, 102, 0.2);
   border-radius: 50%;
+}
+
+.btnActive{
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: .2s;
 }
 
 .best-ranking__heart i{
@@ -374,6 +396,7 @@ main .swiper-slide img {
 
   background-color: #f2f2f2;
   border-radius: 10px;
+
   cursor: pointer;
 }
 
@@ -387,22 +410,28 @@ main .swiper-slide img {
   cursor: pointer;
 }
 
+/*vid-section - 비디오 플레이어 */
 .vid-section::after{
   content: "";
-  display: block;
-  margin-top: 1rem;
+
   height: 10px;
+  display: block;
+
+  margin-top: 1rem;
   background-color: #f2f2f2;
   border-radius: 0  0 5px 5px;
 }
-*
+
 .vid__area{
   width: 100%;
-  margin-top: 1rem;
-  background-color: var(--color-jordy);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: 1rem;
+
+  background-color: var(--color-jordy);
   border-radius: 10px;
 }
 
@@ -411,10 +440,11 @@ main .swiper-slide img {
 }
 
 .vid-items__comps{
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: .5rem;
+
+  margin-top: 1rem;
 }
 
 .vid-items__comp{
@@ -452,6 +482,7 @@ main .swiper-slide img {
   transition: .2s;
 }
 
+/* exhibition : 전시 아이템 */
 .exhibition-section::after{
   content: "";
   display: block;
@@ -526,17 +557,18 @@ main .swiper-slide img {
   font-size: .9rem;
 }
 
+
+/* recom-section -그리드를 사용했습니다 */
 .recom-section .new-item__title{
   margin-bottom: .5rem;
 }
 
 .recom-section .recom-grid{
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1rem;
-
-  margin-bottom: 5rem;
+  
+  margin: 1rem 0 5rem 0;
 }
 
 .recom-grid__comp{
@@ -559,4 +591,42 @@ main .swiper-slide img {
 .recom-grid__comp-text div:nth-child(1){
   font-size: 1.1rem;
   font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* 제일 상단으로 가는 버튼 */
+#to-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 90%;
+  right: 2%;
+  z-index: 10;
+
+  cursor: pointer;
+}
+
+.to-top-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+}
+
+.to-top-icon:hover{
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+.to-top-icon i{
+  font-size: 1.5rem;
+  color: var(--color-jordy);
+}
+
+.to-top-icon img{
+  width: 55px;
+  border-radius: 50%;
+  border: 1px solid var(--color-jordy);
 }
